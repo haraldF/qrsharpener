@@ -2,6 +2,10 @@
 
 This little utility tries to recreate a QR code from a blurry picture.
 
+## Trying it out
+
+This project is hosted at [https://haraldf.github.io/qrsharpener/](https://haraldf.github.io/qrsharpener/).
+
 ## Usage from node.js
 
 ```bash
@@ -24,4 +28,14 @@ Uses the excellent `parcel` utility to serve a small webpage so you can try the 
 
 ## History
 
-While watching the very funny comedian Ryan Spaulding, a small video played with a QR code in the corner. Thinking that it was an easter egg, I snapped a quick photo with my phone. But alas, the room was dark and the image was blurry. None of the QR code recognizers would work at all. So I sat down and did a little weekend hack, basically segmenting the QR code into 29x29 pieces and guessing which color it was (white or black). First, I thought I need to do quite some heuristics, but then it turned out that simply taking the center pixel of each block was good enough. And behold - I generated a 29x29 pixel image that every QR code reader would understand. To my dismay, the QR code in my photo was not an easter egg but just a reminder to buy the freeware video converter that Ryan appartenly used. Oh well, maybe the tool might be useful for other people, too, so here you go, feel free to try it out :)
+While watching the very funny comedian David Ryan Spaulding, a small video played with a QR code in the corner. Thinking that it was an easter egg, I snapped a quick photo with my phone:
+
+![QRCode](testImages/QR.jpg)
+
+ But alas, the room was dark and the image was blurry. None of the QR code recognizers would work at all. So I sat down and did a little weekend hack, basically segmenting the QR code into 29x29 pieces and assigning a color (white or black). First, I thought I need to do quite some heuristics, but then it turned out that simply taking the center pixel of each block was good enough. And behold - I generated a 29x29 pixel image that (after zooming in a bit) every QR code reader would understand:
+
+ ![Result](testImages/res.png)
+
+To my dismay, the QR code in my photo was not an easter egg but just a reminder to buy the video converter that David apparently used.
+
+Oh well, maybe the tool might be useful for other people, too, so here you go, feel free to try it out :)

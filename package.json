@@ -4,7 +4,7 @@
   "description": "Takes a blurry shot of a QR code and tries to sharpen it",
   "scripts": {
     "start": "parcel index.html",
-    "deploy": "parcel build -d docs index.html",
+    "deploy": "parcel build -d docs --public-url . index.html",
     "test": "ts-mocha test/*.ts"
   },
   "keywords": [],

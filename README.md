@@ -1,5 +1,7 @@
 # QR Code Sharpener
 
+[![Travis CI](https://travis-ci.org/haraldF/qrsharpener.svg?branch=master)](https://travis-ci.org/haraldF/qrsharpener)
+
 This little utility tries to recreate a QR code from a blurry picture.
 
 ## Trying it out

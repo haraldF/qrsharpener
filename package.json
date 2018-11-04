@@ -14,15 +14,15 @@
     "jpeg-js": "^0.3.4"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.4",
+    "@types/chai": "^4.1.7",
     "@types/jpeg-js": "^0.3.0",
     "@types/mocha": "^5.2.5",
-    "chai": "^4.1.2",
+    "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "parcel-bundler": "^1.9.7",
+    "parcel-bundler": "^1.10.3",
     "raw-loader": "^0.5.1",
-    "ts-node": "^7.0.1",
     "ts-mocha": "^2.0.0",
-    "typescript": "^3.0.1"
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
   }
 }
